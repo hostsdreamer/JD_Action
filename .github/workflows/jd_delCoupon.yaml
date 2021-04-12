@@ -25,8 +25,8 @@ name: 删除优惠券🎟（未设定自动运行，删券慎用）
               run: |
                   npm install
             - name: "运行【删除优惠券🎟】"
-              run: |
-                  node onlyOneExecute.js
+#             run: |
+#                  node onlyOneExecute.js
               env:
                   JD_COOKIE: ${{ github.event.client_payload.JD_COOKIE || secrets.JD_COOKIE }}
                   JD_DEBUG: ${{ github.event.client_payload.JD_DEBUG || secrets.JD_DEBUG }}
